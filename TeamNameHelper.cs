@@ -142,7 +142,7 @@ namespace XBS.Core.Parser
 
             else if (teamName == "New Jersey Devils")
             {
-                return "NJD";
+                return "NJ";
             }
 
 
@@ -232,7 +232,12 @@ namespace XBS.Core.Parser
 
             else if (teamName == "Washington Capitals")
             {
-                return "WSH";
+                return "WAS";
+            }
+
+            else if (teamName == "Seattle Kraken")
+            {
+                return "SEA";
             }
 
             return String.Empty;
