@@ -12,14 +12,35 @@ namespace XBS.Core.Parser
             {
                 return "ANA";
             }
+            else if (teamName == "Atlanta Flames")
+            {
+                return "ATL";
+            }
 
-
+            else if (teamName == "Minnesota North Stars")
+            {
+                return "MNS";
+            }
             else if (teamName == "Arizona Coyotes")
             {
                 return "ARI";
             }
 
+            else if (teamName == "Quebec Nordiques")
+            {
+                return "QUE";
+            }
 
+            else if (teamName == "Team Canada")
+            {
+                return "CAN";
+            }
+            else if (teamName == "Team USA")
+            {
+                return "USA";
+            }
+
+            
             else if (teamName == "Boston Bruins")
             {
                 return "BOS";
