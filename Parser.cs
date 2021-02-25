@@ -89,14 +89,15 @@ namespace XBS.Core.Parser
 
                 var uri = playerCell.Attributes.SingleOrDefault(x => x.Name == "href");
 
-                //uses order C, LW, RW, D, G
+                //uses order C, LW, RW, LD, RD, G
                 var playerObj = new Player();
 
                 playerObj.Gamertag = gamertag;
                 playerObj.C = preference.ChildNodes[0].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
                 playerObj.LW = preference.ChildNodes[1].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
                 playerObj.RW = preference.ChildNodes[2].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
-                playerObj.D = preference.ChildNodes[3].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
+                playerObj.LD = preference.ChildNodes[3].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
+                playerObj.RD = preference.ChildNodes[3].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
                 playerObj.G = preference.ChildNodes[4].ChildNodes.Count(x => x.OuterHtml.Contains("icon_star_2"));
                 if (uri != null)
                 {
