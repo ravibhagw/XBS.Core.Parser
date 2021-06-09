@@ -430,7 +430,7 @@ namespace XBS.Core.Parser
                 statsObj.OTL = Int32.Parse(childCells[4].InnerText);
                 //statsObj.WinPercentage = Int32.Parse(childCells[6].InnerText);
                 statsObj.GoalsAgainst = Int32.Parse(childCells[6].InnerText);
-                statsObj.Saves = Int32.Parse(childCells[7].InnerText);
+                statsObj.Saves = Int32.Parse(childCells[7].InnerText.Replace(",",String.Empty));
                 statsObj.GAA = decimal.Parse(childCells[8].InnerText);
 
                 statsObj.SavesPerGoalAgainst = decimal.Parse(childCells[10].InnerText);
